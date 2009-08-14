@@ -1,0 +1,40 @@
+export BRCS=endobson@ssh.cs.brown.edu
+export PAGER=less
+export LESS=-X
+export EDITOR=vim
+
+export VIM_APP_DIR=/Applications
+
+
+export M2_HOME=/usr/local/apache-maven/apache-maven-2.1.0
+export M2=$M2_HOME/bin
+export PATH=$M2:$PATH
+
+export MAVEN_OPTS="-Xms256m -Xmx512m"
+export ANT_OPTS="-Xms512M -Xmx512M"
+
+export PATH=~/bin:$PATH
+export PATH=$PATH:'/Applications/PLT Scheme v4.2/bin'
+export PATH=/opt/local/bin:/opt/local/sbin:/usr/local/mysql/bin:$PATH
+export MANPATH=/opt/local/man/:$MANPATH
+export MANPATH=$MANPATH:'/Applications/PLT Scheme v4.2/man'
+
+export SCALA_HOME=/Applications/scala
+export SCALA=$SCALA_HOME/bin
+export PATH=$PATH:$SCALA
+
+export PATH=$PATH:/usr/local/git/bin
+export MANPATH=$MANPATH:/usr/local/git/man
+export MANPATH=/usr/local/man/:$MANPATH
+
+
+#export JAVA_HOME=/System/Library/Frameworks/JavaVM.framework/Versions/1.6/Home 
+#export JAVACMD=$JAVA_HOME/bin/java
+#export PATH=$JAVA_HOME/bin:$PATH
+
+export PATH=$PATH:/usr/texbin
+
+
+export CLICOLOR=1
+# use yellow for directories
+export LSCOLORS=dxfxcxdxbxegedabagacad

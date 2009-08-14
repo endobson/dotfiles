@@ -1,0 +1,56 @@
+set nocompatible
+
+
+noremap j d
+noremap J D
+noremap d h
+noremap D H
+noremap h j
+noremap H J
+noremap l n
+noremap L N
+noremap n l
+noremap N L
+noremap t k
+noremap T K
+noremap k t
+noremap K T
+
+noremap , ;
+noremap ; ,
+
+
+noremap H gj
+noremap T gk
+
+lnoremap <C-c> <ESC> 
+
+nnoremap ' `
+nnoremap ` '
+
+set listchars=tab:>-,trail:·,eol:$
+let mapleader = ","
+nnoremap <silent> <leader>n :NERDTreeToggle<CR>
+nnoremap <silent> <leader>s :set list!<CR>
+
+set ignorecase 
+set smartcase
+set tabstop=4
+set softtabstop=4
+set shiftwidth=4
+set expandtab
+set numberwidth=3
+set hidden
+set number
+set smartindent
+syntax on
+set hlsearch
+set wrapscan
+set whichwrap=h,l,~,[,],s,b
+set backspace=indent,eol,start 
+set background=dark
+set mouse=a
+colorscheme ir_black
+
+":highlight LineNr term=NONE cterm=NONE ctermfg=Blue  ctermbg=NONE gui=NONE guifg=DarkGrey guibg=NONE
+

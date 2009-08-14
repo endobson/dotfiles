@@ -1,0 +1,2 @@
+(module customization scheme
+  (require readline))

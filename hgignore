@@ -1,0 +1,12 @@
+syntax: regexp
+^bin/
+^build/
+^target/
+
+syntax: glob 
+\#*
+*.swp
+*~
+*.hi
+*.o
+*.DS_Store
