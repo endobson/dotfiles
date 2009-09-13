@@ -24,7 +24,7 @@ sourcehook ospath; sourcehook osmanpath
 #
 # Load personal environment and umask settings.
 #
-source $HOME/.environment
+source $HOME/.environment.local source $HOME/.environment
 
 
 #

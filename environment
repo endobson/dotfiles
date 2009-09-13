@@ -46,19 +46,10 @@ setenvvar       PRINTER          bw1
 setenvvar       PAGER            less
 setenvvar       LESS             -X
 setenvvar       EDITOR           vim
-setenvvar	LANG	 	 en_US.UTF-8
-setenvvar	LC_ALL	 	 en_US.UTF-8
+setenvvar       LANG	 	 en_US.UTF-8
+setenvvar       LC_ALL	 	 en_US.UTF-8
 
-setenvvar      M2_HOME           $HOME/plt/apache-maven/apache-maven-2.0.9
-setenvvar      M2                $M2_HOME/bin
-setenvvar      MAVEN_OPTS        "-Xms512M -Xmx512M"
 setenvvar      ANT_OPTS          "-Xms512M -Xmx512M"
-setenvvar      SCALA_HOME        $HOME/plt/scala/latest
-setenvvar      SCALA             $SCALA_HOME/bin
-setenvvar      JAVA_HOME         /usr/lib/jvm/java-6-sun/jre
-setenvvar      JAVACMD           $JAVA_HOME/bin/java
-setenvvar      GEM_HOME=/pro/motion/shapecapture/ruby/gems
-setenvvar      RUBYLIB=/pro/motion/shapecapture/ruby/lib:/usr/lib/ruby/1.8
 
 
 #setenvvar      AWT_TOOLKIT       MToolkit
@@ -77,20 +68,12 @@ pathprependifdir MANPATH           "$HOME/man.$OS"
 # Add custom paths and manpaths.
 #
 
-pathprependifdir PATH           "$M2"
-pathprependifdir PATH           "$SCALA"
 pathappendifdir  PATH           "$HOME/.cabal/bin"
-pathprependifdir PATH           "/pro/motion/shapecapture/ruby/bin"
-pathprependifdir PATH           "/u/endobson/plt/dist/bin"
-pathprependifdir MANPATH        "$SCALA_HOME/man"
-#pathappend       MANPATH       /my/favorite/manpath
-#pathprependifdir PATH           "/pro/plt/drscheme/nightly/plt/bin"
+
 #
 # Configure how course-specific settings are loaded. Refer to hooks(7).
 #
 
-#setenvvar      CSIDENT_SKIP    'cs017student'
-#setenvvar      CSIDENT_APPEND  'cs004ta cs123student'
 
 
 

@@ -85,6 +85,7 @@ fi
 #Load up aliases
 
 source $HOME/.alias
+source $HOME/.balias.local
 source $HOME/.balias
 
 function cs51 () {

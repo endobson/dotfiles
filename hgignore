@@ -1,11 +1,16 @@
+syntax: regexp
+^bin/
+^build/
+^target/
+^dist/
+^doc/
+^sandbox/
+
 syntax: glob
-*.swp
+\#*
+*.sw?
+.*.sw?
 *~
 *.hi
 *.o
-syntax: regexp
-^target
-^bin
-^build
-^doc
-^sandbox
+*.DS_Store

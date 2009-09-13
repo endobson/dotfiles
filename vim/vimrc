@@ -20,7 +20,7 @@ set expandtab
 set hidden
 set ignorecase
 set smartcase
-
+set mouse=a
 
 set listchars=tab:>-,trail:·,eol:$
 let mapleader = ","

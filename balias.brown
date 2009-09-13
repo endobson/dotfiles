@@ -1,0 +1,5 @@
+alias ls="ls --color=auto -F"
+alias sbrown="ssh -t engelbart screen -x -U -R"
+alias ff="nohup firefox 2>&1 >/dev/null &"
+alias tesla="ssh -t tesla -x screen -U -x"
+alias eng="ssh -t engelbart -x screen -U -x"
