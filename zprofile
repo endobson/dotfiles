@@ -4,8 +4,8 @@
 # output on startup.
 #
 
-if [ -f /etc/hook.sh ]; then
-	. /etc/hook.sh
+if [ -f ~/.dotfiles/hook.sh ]; then
+	. ~/.dotfiles/hook.sh
 #       hookdebug
 else
 	alias sourcehook=:
@@ -24,7 +24,8 @@ sourcehook ospath; sourcehook osmanpath
 #
 # Load personal environment and umask settings.
 #
-source $HOME/.environment.local source $HOME/.environment
+source $HOME/.environment.local
+source $HOME/.environment
 
 
 #

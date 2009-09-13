@@ -1,0 +1,22 @@
+export BRCS=endobson@ssh.cs.brown.edu
+export VIM_APP_DIR=/Applications
+
+
+export PATH=$PATH:'/Applications/PLT Scheme v4.2/bin'
+export PATH=/opt/local/bin:/opt/local/sbin:/usr/local/mysql/bin:$PATH
+export MANPATH=/opt/local/man/:$MANPATH
+export MANPATH=$MANPATH:'/Applications/PLT Scheme v4.2/man'
+
+
+export PATH=$PATH:/usr/local/git/bin
+export MANPATH=$MANPATH:/usr/local/git/man
+export MANPATH=/usr/local/man/:$MANPATH
+
+export PATH=$PATH:/usr/texbin
+
+
+
+
+export CLICOLOR=1
+# use yellow for directories
+export LSCOLORS=dxfxcxdxbxegedabagacad
