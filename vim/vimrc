@@ -28,9 +28,12 @@ lnoremap <C-c> <ESC>
 nnoremap ' `
 nnoremap ` '
 
+
+
 set listchars=tab:>-,trail:·,eol:$
 let mapleader = ","
 nnoremap <silent> <leader>n :NERDTreeToggle<CR>
+nnoremap <silent> <leader>m :!make<CR>
 nnoremap <silent> <leader>s :set list!<CR>
 
 set ignorecase 

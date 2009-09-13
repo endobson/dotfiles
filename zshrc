@@ -81,3 +81,8 @@ set -C
 
 source $HOME/.alias
 source $HOME/.balias
+
+if [[ -n $SCREENPATH ]] then
+    PATH=$SCREENPATH;
+    unset SCREENPATH
+fi

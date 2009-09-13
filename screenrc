@@ -2,6 +2,7 @@ vbell off
 caption always
 caption string "%{kw}%-w%{wr}%n %t%{-}%+w"
 escape "^Ta"
+markkeys "h=d:j=h:k=t:l=n: =y"
 bind ^Y copy
 bind y copy
 bind v copy
@@ -11,9 +12,8 @@ bind . paste .
 bind i focus
 bind h
 bind H
-bind B eval "writebuf" "exec sh -c 'pbcopy < /tmp/screen-exchange'"
-bind b eval "exec .!. pbpaste" 
-markkeys "h=d:j=h:k=t:l=n: =y"
+
 
 
 defscrollback 1000
+source .screenrc.local

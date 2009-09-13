@@ -1,18 +1,7 @@
-
-
 alias pd=pushd
-alias ls="ls -GF"
 alias n="ls -l"
 alias no="ls"
 alias na="ls -la"
 alias e=$EDITOR
 alias se=sudoedit
 alias g=egrep
-alias brown="ssh $BRCS"
-alias sbrown="ssh $BRCS -t host=engelbart screen -x -R"
-alias sbrownx="ssh $BRCS -tX host=engelbart screen -x -R"
-alias stable="ssh stabilizer@csi1730.cs.brown.edu"
-alias sx="screen -x -r"
-alias j=java
-alias jc=javac
-alias eclimd="/Applications/eclipse/plugins/org.eclim_1.4.3/bin/eclimd"
