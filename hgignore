@@ -1,0 +1,11 @@
+syntax: glob
+*.swp
+*~
+*.hi
+*.o
+syntax: regexp
+^target
+^bin
+^build
+^doc
+^sandbox

@@ -1,0 +1,12 @@
+#This is a Mercurial configuration file. 
+[ui] 
+username= Eric Dobson <endobson@cs.brown.edu>
+ssh = ssh -C
+ignore = ~/.hgignore
+
+[extensions]
+fetch = 
+
+[trusted]
+groups = plt
+groups = body
