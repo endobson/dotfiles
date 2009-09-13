@@ -1,0 +1,6 @@
+set go-=r
+set go-=L
+set go-=T
+set guifont=Monaco:h12
+set lines=46
+set columns=182

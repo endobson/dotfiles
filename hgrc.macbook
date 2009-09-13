@@ -1,0 +1,20 @@
+#This is a Mercurial configuration file. 
+[ui] 
+username= Eric Dobson <endobson@cs.brown.edu>
+ssh = ssh -C
+ignore = ~/.hgignore
+
+[extensions]
+fetch =
+hgext.extdiff =
+hgk =
+
+[extdiff]
+cmd.opendiff = opendiff-w
+
+[hgk]
+path = /opt/local/share/mercurial/contrib/hgk
+
+[merge-tools]
+filemerge.executable = opendiff-w
+filemerge.args = $local $other -ancestor $base -merge $output
