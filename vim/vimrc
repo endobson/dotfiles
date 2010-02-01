@@ -3,7 +3,7 @@ set whichwrap=h,l,~,[,],s,b
 
 lnoremap <C-c> <ESC> 
 
-source! ~/.vim_dvorak
+source! ~/.vim/vim_dvorak
 map <F8> :!make
 map ge ia:-V:! tr 'aeiouAEIOUáéíóúÁÉÍÓÚnNñÑ' 'áéíóúÁÉÍÓÚaeiouAEIOUñÑnN'i$ni
 
