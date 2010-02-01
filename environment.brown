@@ -1,2 +1,6 @@
 setenvvar      JAVA_HOME         /usr/lib/jvm/java-6-sun/jre
 setenvvar      JAVACMD           $JAVA_HOME/bin/java
+
+pathprependifdir PATH             ~/plt/jeuclid/bin
+pathprependifdir PATH             /pro/plt/ghc/latest/bin
+pathprependifdir PATH             /pro/plt/drscheme/latest/bin

@@ -103,6 +103,28 @@ function cs31 () {
  )
 }
 
+function cs141 () {
+ (
+ ((SHLVL++))
+ PS1MIDDLE=$PS1MIDDLE${PS1MIDDLE:+ }"141"
+ PS1=$PS1FRONT$PS1MIDDLE$PS1BACK 
+ pathappend PATH /course/cs141/bin
+ cd ~/course/cs141
+ zsh
+ )
+}
+
+function cs155 () {
+ (
+ ((SHLVL++))
+ PS1MIDDLE=$PS1MIDDLE${PS1MIDDLE:+ }"155"
+ PS1=$PS1FRONT$PS1MIDDLE$PS1BACK 
+ pathappend PATH /course/cs141/bin
+ cd ~/course/cs155
+ zsh
+ )
+}
+
 function cs173 () {
  (
  pathappend PATH /course/cs173/bin
@@ -112,12 +134,26 @@ function cs173 () {
  )
 }
 
+function cs273 () {
+ (
+ ((SHLVL++))
+ cd ~/course/cs273
+ PS1MIDDLE=$PS1MIDDLE${PS1MIDDLE:+ }"273"
+ PS1=$PS1FRONT$PS1MIDDLE$PS1BACK 
+ zsh
+ )
+}
+
 function cs18 () {
  (
+ ((SHLVL++))
+ PS1MIDDLE=$PS1MIDDLE${PS1MIDDLE:+ }"18"
+ PS1=$PS1FRONT$PS1MIDDLE$PS1BACK 
  cd /course/cs018
  umask 007 
- pathappend PATH /course/cs018/bin
- pathappend PATH /course/cs018/tabin
+ pathprepend PATH /course/cs018/bin
+ pathprepend PATH /course/cs018/tabin
+ pathprepend PATH /course/cs018/scala/bin
  zsh
  )
 }
@@ -125,7 +161,7 @@ function cs18 () {
 function cs17 () {
  (
  ((SHLVL++))
- PS1MIDDLE=$PS1MIDDLE"17"
+ PS1MIDDLE=$PS1MIDDLE${PS1MIDDLE:+ }"17"
  PS1=$PS1FRONT$PS1MIDDLE$PS1BACK 
  cd /course/cs017
  umask 007 

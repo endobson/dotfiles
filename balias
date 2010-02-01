@@ -1,8 +1,10 @@
-alias n="ls -l"
-alias no="ls"
-alias na="ls -la"
+alias n="ls-color -l"
+alias no="ls-color"
+alias na="ls-color -la"
 alias e=$EDITOR
 alias se=sudoedit
 alias g=egrep
 alias pd=pushd
 alias svn-add-all="svn status | grep \"^\?\" | awk '{print \$2}' | xargs svn add"
+
+alias rzel="ssh rzel"
