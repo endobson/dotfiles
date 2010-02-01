@@ -1,0 +1,19 @@
+:noremap j j
+:noremap k k
+:noremap J J
+:noremap d d
+:noremap D D
+:noremap h h
+:noremap H H
+:noremap l l
+:noremap L L
+:noremap n n
+:noremap N N
+:noremap t t
+:noremap T T
+:noremap k k
+:noremap K K
+:noremap , ,
+:noremap ; ;
+:map <F10> :source! ~/.vim/vim_dvorak
+:
