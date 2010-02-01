@@ -20,8 +20,10 @@
 #
 # This file is only sourced for interactive shells
 
-if [ -z "$PS1" ]; then
-	return
+if [[ -o interactive ]]; then
+	#return
+else
+    return
 fi
 
 #
@@ -67,7 +69,7 @@ compinit
 HISTFILE=~/.histfile
 HISTSIZE=1000
 SAVEHIST=1000
-setopt appendhistory autocd noclobber
+setopt appendhistory autocd noclobber prompt_subst
 unsetopt extendedglob nomatch notify
 # End of lines configured by zsh-newuser-install
 
@@ -87,6 +89,11 @@ fi
 source $HOME/.alias
 source $HOME/.balias.local
 source $HOME/.balias
+
+function prompt_char {
+   hg root >/dev/null 2>/dev/null && echo '☿' && return
+   echo '%%'
+} 
 
 function cs51 () {
  (
