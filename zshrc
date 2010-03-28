@@ -21,7 +21,7 @@
 # This file is only sourced for interactive shells
 
 if [[ -o interactive ]]; then
-	#return
+	#don't return
 else
     return
 fi
@@ -91,7 +91,7 @@ source $HOME/.balias.local
 source $HOME/.balias
 
 function prompt_char {
-   (hg root >/dev/null 2>/dev/null) && echo '☿' && return
+   merc >/dev/null 2>/dev/null && echo '☿' && return
    echo '%%'
 } 
 
@@ -114,7 +114,7 @@ function cs141 () {
  (
  ((SHLVL++))
  PS1MIDDLE=$PS1MIDDLE${PS1MIDDLE:+ }"141"
- PS1=$PS1FRONT$PS1MIDDLE$PS1BACK 
+ PROMPT=$PS1FRONT$PS1MIDDLE$PS1BACK 
  pathappend PATH /course/cs141/bin
  cd ~/course/cs141
  zsh
@@ -125,7 +125,7 @@ function cs155 () {
  (
  ((SHLVL++))
  PS1MIDDLE=$PS1MIDDLE${PS1MIDDLE:+ }"155"
- PS1=$PS1FRONT$PS1MIDDLE$PS1BACK 
+ PROMPT=$PS1FRONT$PS1MIDDLE$PS1BACK 
  pathappend PATH /course/cs141/bin
  cd ~/course/cs155
  zsh
@@ -146,7 +146,18 @@ function cs273 () {
  ((SHLVL++))
  cd ~/course/cs273
  PS1MIDDLE=$PS1MIDDLE${PS1MIDDLE:+ }"273"
- PS1=$PS1FRONT$PS1MIDDLE$PS1BACK 
+ PROMPT=$PS1FRONT$PS1MIDDLE$PS1BACK 
+ zsh
+ )
+}
+
+function cs168 () {
+ (
+ ((SHLVL++))
+ cd ~/proj/course/cs168
+ PS1MIDDLE=$PS1MIDDLE${PS1MIDDLE:+ }"168"
+ PROMPT=$PS1FRONT$PS1MIDDLE$PS1BACK 
+ pathappend PATH /course/cs168/bin
  zsh
  )
 }
@@ -155,7 +166,7 @@ function cs18 () {
  (
  ((SHLVL++))
  PS1MIDDLE=$PS1MIDDLE${PS1MIDDLE:+ }"18"
- PS1=$PS1FRONT$PS1MIDDLE$PS1BACK 
+ PROMPT=$PS1FRONT$PS1MIDDLE$PS1BACK 
  cd /course/cs018
  umask 007 
  pathprepend PATH /course/cs018/bin
@@ -169,7 +180,7 @@ function cs17 () {
  (
  ((SHLVL++))
  PS1MIDDLE=$PS1MIDDLE${PS1MIDDLE:+ }"17"
- PS1=$PS1FRONT$PS1MIDDLE$PS1BACK 
+ PROMPT=$PS1FRONT$PS1MIDDLE$PS1BACK 
  cd /course/cs017
  umask 007 
  pathappend PATH /course/cs017/bin

@@ -48,7 +48,6 @@ if [ -z "$ZSHIENVRUN" ]; then
         export PS1FRONT="%{$fg[red]%}%n%{$reset_color%}@%{$fg[blue]%}%m%{$reset_color%} %{$fg[green]%}("
         export PS1BACK=")%{$reset_color%} %{$fg[yellow]%}%~ %{$reset_color%}"'$(prompt_char) '
         export PS1MIDDLE=""
-        #export PS1=$PS1FRONT$PS1MIDDLE$PS1BACK 
         export PROMPT=$PS1FRONT$PS1MIDDLE$PS1BACK 
         export RPS1="%{$fg[red]%}(%{$reset_color%}%{$fg[blue]%}%?%{$reset_color%}%{$fg[red]%})%{$reset_color%}"
         export ZSHIENVRUN=run
