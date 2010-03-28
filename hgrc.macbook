@@ -12,8 +12,6 @@ hgk =
 [extdiff]
 cmd.opendiff = opendiff-w
 
-[hgk]
-path = /opt/local/share/mercurial/contrib/hgk
 
 [merge-tools]
 filemerge.executable = opendiff-w

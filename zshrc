@@ -91,7 +91,7 @@ source $HOME/.balias.local
 source $HOME/.balias
 
 function prompt_char {
-   hg root >/dev/null 2>/dev/null && echo '☿' && return
+   (hg root >/dev/null 2>/dev/null) && echo '☿' && return
    echo '%%'
 } 
 

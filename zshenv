@@ -41,10 +41,6 @@ if [ -z "$ZSHENVRUN" ]; then
 fi
 
 if [ -z "$ZSHIENVRUN" ]; then
-    function prompt_char {
-       hg root >/dev/null 2>/dev/null && echo '☿' && return
-       echo '%%'
-    } 
 
     case $- in
     *i*)    # interactive shell
