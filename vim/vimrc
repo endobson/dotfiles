@@ -3,13 +3,13 @@ set whichwrap=h,l,~,[,],s,b
 
 lnoremap <C-c> <ESC> 
 
-source! ~/.vim/vim_dvorak
+"source! ~/.vim/vim_dvorak
 map <F8> :!make
 map ge ia:-V:! tr 'aeiouAEIOUáéíóúÁÉÍÓÚnNñÑ' 'áéíóúÁÉÍÓÚaeiouAEIOUñÑnN'i$ni
 
 set numberwidth=3
 set number
-:highlight LineNr term=NONE cterm=NONE ctermfg=Blue  ctermbg=NONE gui=NONE guifg=DarkGrey guibg=NONE
+highlight LineNr term=NONE cterm=NONE ctermfg=Blue  ctermbg=NONE gui=NONE guifg=DarkGrey guibg=NONE
 
 set tabstop=4
 set softtabstop=4
@@ -27,4 +27,5 @@ let mapleader = ","
 nnoremap <silent> <leader>n :NERDTreeToggle<CR>
 nnoremap <silent> <leader>s :set list!<CR>
         
-
+"shift tab works
+cmap <Esc>[Z <s-tab>
