@@ -3,7 +3,7 @@ export VIM_APP_DIR=/Applications
 
 
 export PATH=/sbin:/usr/sbin:$PATH
-export PATH=$PATH:'/Applications/PLT Scheme v4.2.4/bin'
+export PATH=$PATH:'/Applications/PLT Scheme v4.2.5/bin'
 export PATH=/opt/local/bin:/opt/local/sbin:/usr/local/mysql/bin:$PATH
 export MANPATH=/opt/local/man/:$MANPATH
 export MANPATH=$MANPATH:'/Applications/PLT Scheme v4.2.4/man'

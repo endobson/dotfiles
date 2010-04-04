@@ -27,5 +27,7 @@ let mapleader = ","
 nnoremap <silent> <leader>n :NERDTreeToggle<CR>
 nnoremap <silent> <leader>s :set list!<CR>
         
+filetype plugin on
+
 "shift tab works
 cmap <Esc>[Z <s-tab>
