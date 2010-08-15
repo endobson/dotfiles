@@ -7,7 +7,8 @@ pathprependifdir PATH             /pro/motion/shapecapture/ruby/bin
 pathprependifdir PATH             ~/.python/bin
 pathprependifdir PATH             ~/plt/.ghc/bin
 
-sourcefile /pro/plt/drscheme/latest/config
+sourcefile /pro/plt/software/racket/latest/std/config
+
 
 pathappendifdir MANPATH         ~/lib/share/man
 
