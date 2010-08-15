@@ -15,3 +15,5 @@ syntax: glob
 *.hi
 *.o
 *.DS_Store
+*.dep
+*.zo

@@ -1,0 +1,9 @@
+[user]
+	name = Eric Dobson
+	email = endobson@cs.brown.edu
+[push]
+	default = tracking
+[sendemail]
+    from = Eric Dobson <endobson@cs.brown.edu>
+    bcc = endobson@cs.brown.edu
+    suppresscc = self
