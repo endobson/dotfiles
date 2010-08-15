@@ -1,8 +1,13 @@
 setenvvar      JAVA_HOME         /usr/lib/jvm/java-6-sun/jre
 setenvvar      JAVACMD           $JAVA_HOME/bin/java
+setenvvar      GEM_HOME          /pro/motion/shapecapture/ruby/gems
+setenvvar      RUBYLIB           /pro/motion/shapecapture/ruby/lib:/usr/lib/ruby/1.8/
 
-pathprependifdir PATH             ~/plt/jeuclid/bin
-pathprependifdir PATH             /pro/plt/ghc/latest/bin
-pathprependifdir PATH             /pro/plt/drscheme/latest/bin
+pathprependifdir PATH             /pro/motion/shapecapture/ruby/bin
+pathprependifdir PATH             ~/.python/bin
+pathprependifdir PATH             ~/plt/.ghc/bin
+
+sourcefile /pro/plt/drscheme/latest/config
 
 pathappendifdir MANPATH         ~/lib/share/man
+

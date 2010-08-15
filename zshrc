@@ -31,7 +31,23 @@ fi
 #
 stty sane
 stty erase '^?'
-bindkey -e
+
+#
+#
+#Set up vi keybindings for dvorak
+
+bindkey "^P" up-line-or-history
+bindkey "^N" down-line-or-history
+bindkey "^[[A" up-history
+bindkey "^[[B" down-history
+bindkey "^R" history-incremental-search-backward
+bindkey "^G" vi-cmd-mode
+bindkey -a "h" down-history
+bindkey -a "t" up-history
+bindkey -a "d" backward-char
+bindkey -a "n" forward-char
+bindkey -a "J" forward-kill-line
+bindkey -a "jj" forward-kill-line
 
 #
 # Prevent prorgrams from dumping core. zsh doesn't seem to have an option to
