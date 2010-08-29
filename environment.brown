@@ -1,13 +1,18 @@
 setenvvar      JAVA_HOME         /usr/lib/jvm/java-6-sun/jre
 setenvvar      JAVACMD           $JAVA_HOME/bin/java
-setenvvar      GEM_HOME          /pro/motion/shapecapture/ruby/gems
-setenvvar      RUBYLIB           /pro/motion/shapecapture/ruby/lib:/usr/lib/ruby/1.8/
 
+setenvvar      RUBYLIB           /pro/motion/shapecapture/ruby/lib
+setenvvar      GEM_HOME          /pro/motion/shapecapture/ruby/gems
 pathprependifdir PATH             /pro/motion/shapecapture/ruby/bin
+pathprependifdir PATH             $GEM_HOME/bin
+
+#setenvvar       GEM_HOME          /pro/motion/dhirshbe/gems
+#pathprependifdir PATH             /pro/motion/dhirshbe/bin
+#pathprependifdir PATH             /pro/motion/dhirshbe/gems/bin
+
 pathprependifdir PATH             ~/.python/bin
 pathprependifdir PATH             ~/plt/.ghc/bin
 
-sourcefile /pro/plt/software/racket/latest/std/config
 
 
 pathappendifdir MANPATH         ~/lib/share/man

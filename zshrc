@@ -38,16 +38,17 @@ stty erase '^?'
 
 bindkey "^P" up-line-or-history
 bindkey "^N" down-line-or-history
-bindkey "^[[A" up-history
-bindkey "^[[B" down-history
+bindkey "^[[A" up-line-or-history
+bindkey "^[[B" down-line-or-history
+bindkey "^B" vi-backward-char
 bindkey "^R" history-incremental-search-backward
 bindkey "^G" vi-cmd-mode
 bindkey -a "h" down-history
 bindkey -a "t" up-history
 bindkey -a "d" backward-char
 bindkey -a "n" forward-char
-bindkey -a "J" forward-kill-line
-bindkey -a "jj" forward-kill-line
+bindkey -a "J" vi-kill-eol
+bindkey -a "jj" kill-whole-line
 
 #
 # Prevent prorgrams from dumping core. zsh doesn't seem to have an option to
@@ -152,7 +153,10 @@ function cs173 () {
  (
  pathappend PATH /course/cs173/bin
  pathappend PATH /course/cs173/plt/bin
- cd ~/course/cs173
+ ((SHLVL++))
+ cd /course/cs173
+ PS1MIDDLE=$PS1MIDDLE${PS1MIDDLE:+ }"173"
+ PROMPT=$PS1FRONT$PS1MIDDLE$PS1BACK 
  zsh
  )
 }
