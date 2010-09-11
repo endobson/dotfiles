@@ -30,6 +30,7 @@ nnoremap <silent> <leader>s :set list!<CR>
 filetype plugin on
 au BufNewFile,BufRead *.rkt set filetype=scheme
 
+set backupcopy=yes
 
 "shift tab works
 cmap <Esc>[Z <s-tab>
