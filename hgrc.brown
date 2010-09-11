@@ -10,3 +10,9 @@ fetch =
 [trusted]
 groups = plt
 groups = body
+
+[auth]
+intuxication.prefix = beta.intuxication.org/hg/endobson/
+intuxication.username = endobson
+intuxication.password = intux
+intuxication.schemes = http
