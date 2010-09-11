@@ -6,6 +6,7 @@ ignore = ~/.hgignore
 
 [extensions]
 fetch = 
+hgext.imerge =!
 
 [trusted]
 groups = plt
@@ -15,4 +16,4 @@ groups = body
 intuxication.prefix = beta.intuxication.org/hg/endobson/
 intuxication.username = endobson
 intuxication.password = intux
-intuxication.schemes = http
+intuxication.schemes = http https
