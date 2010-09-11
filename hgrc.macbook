@@ -1,6 +1,6 @@
 #This is a Mercurial configuration file. 
 [ui] 
-username= Eric Dobson <endobson@cs.brown.edu>
+username= Eric Dobson <eric.n.dobson@gmail.com>
 ssh = ssh -C
 ignore = ~/.hgignore
 

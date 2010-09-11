@@ -44,7 +44,7 @@ umask 007
 
 setenvvar       PRINTER          bw1
 setenvvar       PAGER            less
-setenvvar       LESS             -X
+setenvvar       LESS             "-X"
 setenvvar       EDITOR           vim
 setenvvar       LANG	 	 en_US.UTF-8
 setenvvar       LC_ALL	 	 en_US.UTF-8
@@ -69,6 +69,19 @@ pathprependifdir MANPATH           "$HOME/man.$OS"
 #
 
 pathappendifdir  PATH           "$HOME/.cabal/bin"
+
+#
+# Color less
+#
+setenvvar LESS_TERMCAP_mb $'\e[1;31m'
+setenvvar LESS_TERMCAP_md $'\e[34m'
+setenvvar LESS_TERMCAP_me $'\e[0m'
+setenvvar LESS_TERMCAP_so $'\e[1;44;31m'
+setenvvar LESS_TERMCAP_se $'\e[0m'
+setenvvar LESS_TERMCAP_ue $'\e[0m'
+setenvvar LESS_TERMCAP_us $'\e[1;32m'
+
+
 
 #
 # Configure how course-specific settings are loaded. Refer to hooks(7).
