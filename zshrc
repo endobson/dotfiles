@@ -12,7 +12,7 @@
 # prompt). All other shell options go in ~/.environment and  ~/.alias.
 #
 
-
+unsetopt bgnice
 
 #
 # If this is a non-interactive shell, exit. The rest of this file is loaded
