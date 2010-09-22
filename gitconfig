@@ -7,3 +7,13 @@
     from = Eric Dobson <endobson@cs.brown.edu>
     bcc = endobson@cs.brown.edu
     suppresscc = self
+[alias]
+    st = status
+    ci = commit
+    co = checkout
+[color]
+    diff = auto
+    status = auto
+    branch = auto
+[core]
+    pager = 
