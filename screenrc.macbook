@@ -1,4 +1,5 @@
 bind B eval "writebuf" "exec sh -c 'pbcopy < /tmp/screen-exchange'"
 bind b eval "exec .!. pbpaste" 
 
+
 setenv SCREENPATH $PATH

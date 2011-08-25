@@ -1,11 +1,11 @@
 [user]
 	name = Eric Dobson
-	email = endobson@cs.brown.edu
+	email = eric.n.dobson@gmail.com
 [push]
 	default = tracking
 [sendemail]
-    from = Eric Dobson <endobson@cs.brown.edu>
-    bcc = endobson@cs.brown.edu
+    from = Eric Dobson <eric.n.dobson@gmail.com>
+    bcc = eric.n.dobson@gmail.com
     suppresscc = self
 [alias]
     st = status
@@ -17,3 +17,4 @@
     branch = auto
 [core]
     pager = 
+	excludesfile = /Users/eric/.gitignore

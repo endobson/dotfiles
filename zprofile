@@ -23,9 +23,14 @@
 #
 # Load personal environment and umask settings.
 #
+
+    if [ -x /usr/libexec/path_helper ]; then
+      eval `/usr/libexec/path_helper -s`
+    fi
+
     source $HOME/.environment.local
     source $HOME/.environment
-
+    
 
 #
 # Set the prompt.

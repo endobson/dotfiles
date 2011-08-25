@@ -14,8 +14,8 @@ highlight LineNr term=NONE cterm=NONE ctermfg=Blue  ctermbg=NONE gui=NONE guifg=
 set tabstop=4
 set softtabstop=4
 set shiftwidth=4
-set noautoindent
-set smartindent
+set autoindent
+"set smartindent
 set expandtab
 set hidden
 set ignorecase

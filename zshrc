@@ -108,7 +108,7 @@ source $HOME/.balias.local
 source $HOME/.balias
 
 function prompt_char {
-   merc >/dev/null 2>/dev/null && echo '☿' && return
+   #merc >/dev/null 2>/dev/null && echo '☿' && return
    echo '%%'
 } 
 
