@@ -1,1 +1,18 @@
-(require readline)
+;; The following line loads `xrepl' support
+(require xrepl)
+
+(module racketrc racket/base
+  (require racket/pretty syntax/srcloc)
+  (print-graph #f)
+  (pretty-print-columns 200)
+  (global-port-print-handler pretty-print)
+  
+  (let ((old-error-display-handler (error-display-handler)))
+    (error-display-handler
+      (λ (str exn)
+        (when (exn:srclocs? exn)
+          (for ((srcloc ((exn:srclocs-accessor exn) exn)))
+            (displayln (source-location->string srcloc))))
+        (old-error-display-handler str exn)))))
+(require 'racketrc)
+          

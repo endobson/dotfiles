@@ -11,10 +11,12 @@
     st = status
     ci = commit
     co = checkout
+    wdiff = diff --word-diff=color
+    check = diff --check
 [color]
-    diff = auto
+    diff = always
     status = auto
     branch = auto
 [core]
     pager = 
-	excludesfile = /Users/eric/.gitignore
+	excludesfile = /Users/endobson/.gitignore

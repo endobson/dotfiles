@@ -1,5 +1,4 @@
 syntax on
-set whichwrap=h,l,~,[,],s,b
 
 lnoremap <C-c> <ESC> 
 
@@ -11,6 +10,7 @@ set numberwidth=3
 set number
 highlight LineNr term=NONE cterm=NONE ctermfg=Blue  ctermbg=NONE gui=NONE guifg=DarkGrey guibg=NONE
 
+"filetype plugin indent on
 set tabstop=4
 set softtabstop=4
 set shiftwidth=4
@@ -29,8 +29,25 @@ nnoremap <silent> <leader>s :set list!<CR>
         
 filetype plugin on
 au BufNewFile,BufRead *.rkt set filetype=scheme
+au BufNewFile,BufRead *.scrbl set filetype=scheme
+au BufNewFile,BufRead *.rktl set filetype=scheme
 
 set backupcopy=yes
 
 "shift tab works
 cmap <Esc>[Z <s-tab>
+set nocompatible
+set backspace=indent,eol,start
+set whichwrap=h,l,~,[,],s,b
+set laststatus=2
+
+
+inoremap <c-h> <c-k>
+inoremap <c-g> <c-k>*
+dig BN 8469
+dig BZ 8484
+
+"Setup racket
+if has('mzscheme')
+  mzscheme (current-library-collection-paths (find-library-collection-paths))
+endif

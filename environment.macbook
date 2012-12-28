@@ -2,7 +2,7 @@ export BRCS=endobson@ssh.cs.brown.edu
 export VIM_APP_DIR=/Applications
 
 
-PLT="/Applications/Racket v5.1/"
+PLT="/Users/endobson/proj/racket/plt/"
 export PATH=/sbin:/usr/sbin:$PATH
 export PATH=$PATH:"$PLT/bin"
 export PATH=$PATH:"/Applications/Comet/"
