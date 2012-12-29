@@ -103,8 +103,8 @@ fi
 
 #Load up aliases
 
-source $HOME/.balias.local
-source $HOME/.balias
+source $HOME/.alias.local
+source $HOME/.alias
 
 function prompt_char {
    #merc >/dev/null 2>/dev/null && echo '☿' && return
