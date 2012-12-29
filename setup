@@ -2,7 +2,6 @@
 
 LOCAL=$1
 
-ln -f -s .dotfiles/alias .alias
 ln -f -s .dotfiles/balias .balias
 ln -f -s .dotfiles/balias.$LOCAL .balias.local
 ln -f -s .dotfiles/environment .environment
