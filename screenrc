@@ -15,5 +15,4 @@ bind H
 
 
 
-defscrollback 1000
-source .screenrc.local
+defscrollback 5000
