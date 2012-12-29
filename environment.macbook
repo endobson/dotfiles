@@ -1,17 +1,13 @@
-export BRCS=endobson@ssh.cs.brown.edu
-export VIM_APP_DIR=/Applications
-
-
 PLT="/Users/endobson/proj/racket/plt/"
 export PATH=/sbin:/usr/sbin:$PATH
 export PATH=$PATH:"$PLT/bin"
-export PATH=$PATH:"/Applications/Comet/"
 export PATH=/opt/local/bin:/opt/local/sbin:/usr/local/mysql/bin:$PATH
+export PATH=$PATH:/usr/local/git/bin
+
 export MANPATH=/opt/local/man/:$MANPATH
 export MANPATH=$MANPATH:'$PLT/man'
 
 
-export PATH=$PATH:/usr/local/git/bin
 export MANPATH=$MANPATH:/usr/local/git/man
 export MANPATH=/usr/local/man/:$MANPATH
 export MANPATH=$HOME/man/:$MANPATH

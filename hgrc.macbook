@@ -1,6 +1,6 @@
 #This is a Mercurial configuration file. 
 [ui] 
-username= Eric Dobson <eric.n.dobson@gmail.com>
+username = Eric Dobson <eric.n.dobson@gmail.com>
 ssh = ssh -C
 ignore = ~/.hgignore
 
@@ -9,17 +9,3 @@ fetch =
 hgext.extdiff =
 hgk =
 hggit=/opt/local/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/hggit
-
-[extdiff]
-cmd.opendiff = opendiff-w
-
-
-[merge-tools]
-filemerge.executable = opendiff-w
-filemerge.args = $local $other -ancestor $base -merge $output
-
-[auth]
-intuxication.prefix = beta.intuxication.org/hg/endobson/
-intuxication.username = endobson
-intuxication.password = intux
-intuxication.schemes = http

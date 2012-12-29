@@ -1,0 +1,34 @@
+#!/usr/bin/env bash
+
+LOCAL=$1
+
+ln -f -s .dotfiles/alias .alias
+ln -f -s .dotfiles/balias .balias
+ln -f -s .dotfiles/balias.$LOCAL .balias.local
+ln -f -s .dotfiles/environment .environment
+ln -f -s .dotfiles/environment.$LOCAL .environment.local
+
+ln -f -s .dotfiles/gitconfig .gitconfig
+ln -f -s .dotfiles/gitignore .gitignore
+
+ln -f -s .dotfiles/haskline .haskline
+ln -f -s .dotfiles/hgignore .hgignore
+ln -f -s .dotfiles/hgrc.$LOCAL .hgrc
+
+ln -f -s .dotfiles/less .less
+ln -f -s .dotfiles/lesskey .lesskey
+
+
+ln -f -s .dotfiles/racketrc .racketrc
+ln -f -s .dotfiles/screenrc .screenrc
+
+if [[ ! -d .vim ]]; then
+  ln -f -s .dotfiles/vim .vim
+fi
+ln -f -s .dotfiles/vim/vimrc .vimrc
+
+ln -f -s .dotfiles/zprofile .zprofile
+ln -f -s .dotfiles/zshenv .zshenv
+ln -f -s .dotfiles/zshrc .zshrc
+
+
