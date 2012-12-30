@@ -1,92 +1,22 @@
-#
-# ~/.environment $Revision: 1.4 $
-#
-# This is a confuration file for path, umask, and other personal environment
-# settings. It is loaded from the default ~/.cshrc.
-#
-# Your file creation mask is set, default environment variables are set, and
-# platform-independent bin and man directories (e.g.  ~/bin, ~/bin.Linux or
-# ~/bin.SunOS, if they exist) are added to your path.
-#
-# The shell treats lines beginning with # as comments.
-#
-# EDIT THIS FILE to modify your path or umask and to modify your environment
-# variables.  If you don't know what something in here does, you should
-# probably leave it alone.
-#
-# YOU SHOULD USE ONLY THE HOOK COMMANDS in this file so that it will work
-# from all supported shells. Refer to hooks(7) for a command listing.
-#
-
-#
-# The umask controls the permissions inherited by new files created from a
-# shell or a child process. here's a table of some umask values you might
-# use. See also tcsh(1) and chmod(1).
-#
-# note that files created from xemacs will have the umask of the process
-# that started xemacs, so for the safest behavior, set your umask and then
-# start xemacs from a shell, or create new files in the shell. see touch(1).
-#
-#	owner	group	other	appropriate for
-# 002 	rwx	rwx	r-x	most project work; TA and project web files
-# 007 	rwx	rwx	---	most TA work; private project work
-# 022 	rwx	r-x	r-x	most dotfiles; public web files
-# 027 	rwx	r-x	---	most coursework (group = csxxxta)
-# 077 	rwx	---	---	coursework with group = ugrad
-#
-
+# Set umask to rwxrwx---
 umask 007
 
-
-#
 # Set some common environment variables.
-#
+export PAGER=less
+export LESS=-X
+export EDITOR=vim
+export LANG=en_US.UTF-8
+export LC_ALL=en_US.UTF-8
 
-setenvvar       PRINTER          bw1
-setenvvar       PAGER            less
-setenvvar       LESS             "-X"
-setenvvar       EDITOR           vim
-setenvvar       LANG	 	 en_US.UTF-8
-setenvvar       LC_ALL	 	 en_US.UTF-8
-
-setenvvar      ANT_OPTS          "-Xms512M -Xmx512M"
-
-
-#setenvvar      AWT_TOOLKIT       MToolkit
-
-#
 # Add some common paths.
-#
+pathprependifdir PATH    "$HOME/bin"
+pathprependifdir MANPATH "$HOME/man"
 
-pathprependifdir PATH           "$HOME/bin"
-pathprependifdir PATH           "$HOME/bin.$OS"
-
-pathprependifdir MANPATH           "$HOME/man"
-pathprependifdir MANPATH           "$HOME/man.$OS"
-
-#
-# Add custom paths and manpaths.
-#
-
-pathappendifdir  PATH           "$HOME/.cabal/bin"
-
-#
 # Color less
-#
-setenvvar LESS_TERMCAP_mb $'\e[1;31m'
-setenvvar LESS_TERMCAP_md $'\e[34m'
-setenvvar LESS_TERMCAP_me $'\e[0m'
-setenvvar LESS_TERMCAP_so $'\e[1;44;31m'
-setenvvar LESS_TERMCAP_se $'\e[0m'
-setenvvar LESS_TERMCAP_ue $'\e[0m'
-setenvvar LESS_TERMCAP_us $'\e[1;32m'
-
-
-
-#
-# Configure how course-specific settings are loaded. Refer to hooks(7).
-#
-
-
-
-
+export LESS_TERMCAP_mb=$'\e[1;31m'
+export LESS_TERMCAP_md=$'\e[34m'
+export LESS_TERMCAP_me=$'\e[0m'
+export LESS_TERMCAP_so=$'\e[1;44;31m'
+export LESS_TERMCAP_se=$'\e[0m'
+export LESS_TERMCAP_ue=$'\e[0m'
+export LESS_TERMCAP_us=$'\e[1;32m'

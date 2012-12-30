@@ -1,21 +1,11 @@
-PLT="/Users/endobson/proj/racket/plt/"
-export PATH=/sbin:/usr/sbin:$PATH
-export PATH=$PATH:"$PLT/bin"
-export PATH=/opt/local/bin:/opt/local/sbin:/usr/local/mysql/bin:$PATH
-export PATH=$PATH:/usr/local/git/bin
+PLT=/Users/endobson/proj/racket/plt
 
-export MANPATH=/opt/local/man/:$MANPATH
-export MANPATH=$MANPATH:'$PLT/man'
+pathprependifdir PATH /opt/local/sbin
+pathprependifdir PATH /opt/local/bin
+pathappendifdir  PATH $PLT/bin
 
-
-export MANPATH=$MANPATH:/usr/local/git/man
-export MANPATH=/usr/local/man/:$MANPATH
-export MANPATH=$HOME/man/:$MANPATH
-
-export PATH=$PATH:/usr/texbin
-
-
-
+pathprependifdir MANPATH /opt/local/man
+pathappendifdir  MANPATH $PLT/man
 
 export CLICOLOR=1
 # use yellow for directories

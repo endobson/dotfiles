@@ -1,4 +1,3 @@
-PLT="/home/endobson/proj/racket/plt"
-export PATH=$PATH:"$PLT/bin"
-
-export MANPATH=$MANPATH:'$PLT/man'
+PLT=/home/endobson/proj/racket/plt
+pathappendifdir PATH $PLT/bin
+pathappendifdir MANPATH $PLT/man
