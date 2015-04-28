@@ -5,7 +5,7 @@
   (require racket/pretty syntax/srcloc)
   (print-graph #f)
   (pretty-print-columns 200)
-  (global-port-print-handler pretty-print)
+  (current-print pretty-print-handler)
   
   (let ((old-error-display-handler (error-display-handler)))
     (error-display-handler
@@ -15,4 +15,4 @@
             (displayln (source-location->string srcloc))))
         (old-error-display-handler str exn)))))
 (require 'racketrc)
-          
+         

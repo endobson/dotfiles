@@ -1,8 +1,10 @@
-PLT=/Users/endobson/proj/racket/plt
+PLT=/Users/endobson/proj/racket/plt/racket
+export PLTCOMPILEDROOTS="/Users/endobson/proj/racket/compile-root/@(version)"/
 
 pathprependifdir PATH /opt/local/sbin
 pathprependifdir PATH /opt/local/bin
 pathappendifdir  PATH $PLT/bin
+pathappendifdir  PATH /Applications/google-cloud-sdk/bin
 
 pathprependifdir MANPATH /opt/local/man
 pathappendifdir  MANPATH $PLT/man

@@ -210,3 +210,6 @@ hi  link csXmlTag             Keyword
 
 
 " Special for PHP
+"
+" Special for Racket
+hi racketID            guifg=#B18A3D      guibg=NONE      gui=NONE      ctermfg=brown          ctermbg=NONE      cterm=NONE

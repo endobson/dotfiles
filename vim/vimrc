@@ -28,11 +28,16 @@ nnoremap <silent> <leader>n :NERDTreeToggle<CR>
 nnoremap <silent> <leader>s :set list!<CR>
         
 filetype plugin on
-au BufNewFile,BufRead *.rkt set filetype=scheme
-au BufNewFile,BufRead *.scrbl set filetype=scheme
-au BufNewFile,BufRead *.rktl set filetype=scheme
+au BufNewFile,BufRead *.rkt set filetype=racket
+au BufNewFile,BufRead *.scrbl set filetype=racket
+au BufNewFile,BufRead *.rktl set filetype=racket
+au Filetype racket set lisp
+au Filetype racket set textwidth=102
+au Filetype scheme set textwidth=102
 
-set backupcopy=yes
+
+set nowritebackup
+set directory=~/tmp/vimswp
 
 "shift tab works
 cmap <Esc>[Z <s-tab>
@@ -46,6 +51,7 @@ inoremap <c-h> <c-k>
 inoremap <c-g> <c-k>*
 dig BN 8469
 dig BZ 8484
+dig BC 8450
 
 "Setup racket
 if has('mzscheme')
