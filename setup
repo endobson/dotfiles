@@ -20,6 +20,7 @@ ln -f -s .dotfiles/lesskey .lesskey
 
 ln -f -s .dotfiles/racketrc .racketrc
 ln -f -s .dotfiles/screenrc .screenrc
+ln -f -s .dotfiles/tmux.conf .tmux.conf
 
 if [[ ! -d .vim ]]; then
   ln -f -s .dotfiles/vim .vim
