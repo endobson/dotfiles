@@ -41,18 +41,22 @@ zstyle ':completion:*' max-errors 1
 zstyle ':completion:*' preserve-prefix '//[^/]##/'
 zstyle ':completion:*' substitute 1
 zstyle :compinstall filename '/home/eric/.zshrc'
+# make bazel completion faster
+zstyle ':completion:*' use-cache on
+zstyle ':completion:*' cache-path ~/.zsh/cache
+# Add local completion directory
+fpath[1,0]=~/.zsh/completion/
 
 autoload -Uz compinit
 compinit
 # End of lines added by compinstall
 #
+
 HISTFILE=~/.histfile
 HISTSIZE=5000
 SAVEHIST=5000
 setopt appendhistory autocd noclobber prompt_subst
 unsetopt extendedglob nomatch notify
-
-
 
 #Load up aliases
 source $HOME/.alias.local

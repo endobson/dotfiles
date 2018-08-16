@@ -1,7 +1,5 @@
 syntax on
 
-lnoremap <C-c> <ESC> 
-
 "source! ~/.vim/vim_dvorak
 map <F8> :!make
 map ge ia:-V:! tr 'aeiouAEIOUáéíóúÁÉÍÓÚnNñÑ' 'áéíóúÁÉÍÓÚaeiouAEIOUñÑnN'i$ni
@@ -31,9 +29,15 @@ filetype plugin on
 au BufNewFile,BufRead *.rkt set filetype=racket
 au BufNewFile,BufRead *.scrbl set filetype=racket
 au BufNewFile,BufRead *.rktl set filetype=racket
+au BufNewFile,BufRead *.rktd set filetype=racket
+au BufNewFile,BufRead *.yaspl set filetype=racket
+au BufNewFile,BufRead *.cyaspl set filetype=racket
+au BufNewFile,BufRead *.bzl set filetype=python
 au Filetype racket set lisp
 au Filetype racket set textwidth=102
 au Filetype scheme set textwidth=102
+au Filetype python set shiftwidth=2
+au Filetype python set smartindent
 
 
 set nowritebackup
@@ -52,6 +56,9 @@ inoremap <c-g> <c-k>*
 dig BN 8469
 dig BZ 8484
 dig BC 8450
+
+lnoremap <c-c> <ESC>
+inoremap <c-c> <ESC>
 
 "Setup racket
 if has('mzscheme')

@@ -6,5 +6,6 @@ alias se=sudoedit
 alias g=egrep
 alias pd=pushd
 alias svn-add-all="svn status | grep \"^\?\" | awk '{print \$2}' | xargs svn add"
+alias blaze=bazel
 
 alias rzel="ssh rzel"

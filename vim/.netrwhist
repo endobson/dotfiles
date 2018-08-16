@@ -1,6 +1,1 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =4
-let g:netrw_dirhist_1='/Users/endobson/proj/racket/plt/pkgs/typed-racket-pkgs/typed-racket-lib/typed-racket/typecheck'
-let g:netrw_dirhist_2='/Users/endobson/proj/racket/plt/pkgs/typed-racket-pkgs/typed-racket-lib/typed-racket/types'
-let g:netrw_dirhist_3='/Users/endobson/proj/racket/plt/racket/collects/ffi/unsafe'
-let g:netrw_dirhist_4='/tmp'
+let g:netrw_dirhistmax  =0
