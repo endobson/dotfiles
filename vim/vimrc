@@ -24,6 +24,7 @@ set listchars=tab:>-,trail:·,eol:$
 let mapleader = ","
 nnoremap <silent> <leader>n :NERDTreeToggle<CR>
 nnoremap <silent> <leader>s :set list!<CR>
+nnoremap <silent> <leader>c :cfile<CR>
         
 filetype plugin on
 au BufNewFile,BufRead *.rkt set filetype=racket
