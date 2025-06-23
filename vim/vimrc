@@ -54,9 +54,53 @@ set laststatus=2
 
 inoremap <c-h> <c-k>
 inoremap <c-g> <c-k>*
-dig BN 8469
-dig BZ 8484
-dig BC 8450
+
+dig BN 8469 "ℕ
+dig BZ 8484 "ℤ
+dig BC 8450 "ℂ
+dig BQ 8474 "ℚ
+dig BR 8477 "ℝ
+dig du 8846 "⊎
+dig c+ 8853 "⊕
+dig c* 8855 "⊗
+dig c= 8860 "⊜
+dig c- 8854 "⊖
+dig cc 169 "©
+dig [[ 10214 "⟦
+dig ]] 10215 "⟧
+dig =v 8659 "⇓
+dig hS 688 "ʰ
+dig Sh 688 "ʰ
+dig Si 8305 "ⁱ
+dig Se 7497 "ᵉ
+dig Sr 691 "ʳ
+dig Sl 737 "ˡ
+dig SD 7472 "ᴰ
+dig S2 178 "²
+dig sc 8852 "⊔
+dig l> 10230 "⟶
+dig .> 8674 "⇢
+dig ll 8467 "ℓ
+dig ii 119998 "𝒾
+dig </ 10216 "⟨
+dig /> 10217 "⟩
+dig @< 8826 "≺
+dig @> 8827 "≻
+dig <@ 8828 "≼
+dig >@ 8829 "≽
+dig \|\| 8739 "∣
+dig !{ 8713 "∉
+dig s* 8902 "⋆
+dig *s 963 "σ
+dig I& 8523 "⅋
+dig c> 8618 "↪
+dig 2> 8608 "↠
+dig tt 8868 "⊤
+dig ff 8869 "⊥
+dig \|- 8866 "⊢
+
+
+
 
 lnoremap <c-c> <ESC>
 inoremap <c-c> <ESC>
