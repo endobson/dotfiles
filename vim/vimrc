@@ -73,10 +73,13 @@ dig hS 688 "ʰ
 dig Sh 688 "ʰ
 dig Si 8305 "ⁱ
 dig Se 7497 "ᵉ
+dig nS 8319 "ⁿ
+dig Sn 8319 "ⁿ
 dig Sr 691 "ʳ
 dig Sl 737 "ˡ
 dig SD 7472 "ᴰ
 dig S2 178 "²
+dig S3 179 "³
 dig sc 8852 "⊔
 dig l> 10230 "⟶
 dig .> 8674 "⇢
