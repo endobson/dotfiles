@@ -7,6 +7,11 @@ map ge ia:-V:! tr 'aeiouAEIOUáéíóúÁÉÍÓÚnNñÑ' 'áéíóúÁÉÍ�
 set numberwidth=3
 set number
 highlight LineNr term=NONE cterm=NONE ctermfg=Blue  ctermbg=NONE gui=NONE guifg=DarkGrey guibg=NONE
+highlight QuickFixLine ctermbg=DarkGrey
+
+"Disable obnoxious search features
+set nohlsearch
+set noincsearch
 
 "filetype plugin indent on
 set tabstop=4
@@ -19,6 +24,7 @@ set hidden
 set ignorecase
 set smartcase
 set mouse=a
+set guicursor=
 
 set listchars=tab:>-,trail:·,eol:$
 let mapleader = ","
@@ -36,6 +42,7 @@ au BufNewFile,BufRead *.cyaspl set filetype=racket
 au BufNewFile,BufRead *.bzl set filetype=python
 au Filetype racket set lisp
 au Filetype racket set textwidth=102
+au Filetype racket setlocal formatprg=
 au Filetype scheme set textwidth=102
 au Filetype python set shiftwidth=2
 au Filetype python set smartindent
@@ -75,12 +82,22 @@ dig Si 8305 "ⁱ
 dig Se 7497 "ᵉ
 dig nS 8319 "ⁿ
 dig Sn 8319 "ⁿ
+dig TS 7488 "ᵀ
+dig ST 7488 "ᵀ
+
 dig Sr 691 "ʳ
 dig Sl 737 "ˡ
 dig SD 7472 "ᴰ
 dig S2 178 "²
 dig S3 179 "³
+dig s4 8324 "₄
 dig sc 8852 "⊔
+dig sn 8345 "ⁿ
+dig ns 8345 "ⁿ
+dig ns 8345 "ⁿ
+dig is 7522 "ᵢ
+dig si 7522 "ᵢ
+
 dig l> 10230 "⟶
 dig .> 8674 "⇢
 dig ll 8467 "ℓ
@@ -101,6 +118,11 @@ dig 2> 8608 "↠
 dig tt 8868 "⊤
 dig ff 8869 "⊥
 dig \|- 8866 "⊢
+dig pd 10178 "⟂
+dig U) 8899 "⋃
+dig U( 8898 "⋂
+dig !( 2209 "
+
 
 
 
